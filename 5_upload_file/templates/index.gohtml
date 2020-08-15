@@ -1,0 +1,21 @@
+{{template "header"}}
+<form method="post" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="FIRST NAME "><br>
+    <input type="text" name="lname" placeholder="LAST NAME "><br>
+    <label>FILE TO READ : </label>
+    <input type="file" name="fname"><br>
+    <label>creat NEW FILE </label>
+    <input type="checkbox" name="submitation" ><br>
+    <input type="submit" name="start"><br>
+</form>
+
+{{if .}}
+    <h1> NAME : {{.Name}}</h1>
+    <h1> LAST NAME : {{.LName}}</h1>
+    <h1> CREATING  : {{.Subm}}</h1>
+    <h1> CONTENT OF FILE : </h1>
+    <p>
+        {{.Text}}
+    </p>
+{{end}}
+{{template "rote"}}
