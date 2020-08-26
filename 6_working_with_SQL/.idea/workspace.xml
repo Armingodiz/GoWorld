@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89c702f9-e49c-4740-aae7-204a64163646" name="Default Changelist" comment="">
+    <list default="true" id="b9e8551f-8aa1-41c4-8572-6748bfa47209" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../4_serving_files exercises/1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../4_serving_files exercises/1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../4_serving_files exercises/2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../4_serving_files exercises/2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5_upload_file/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../5_upload_file/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1g8EPmtErwnEWIMX8c3LpdB3vnU" />
+  <component name="ProjectId" id="1gS9sJN1yftpiG3QqhndVzTBap9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,7 +36,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../golang-web-dev-master/030_sessions/08_expire-session" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../quiz-game-Go" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,14 +44,29 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="6_working_with_SQL" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89c702f9-e49c-4740-aae7-204a64163646" name="Default Changelist" comment="" />
-      <created>1597487797374</created>
+      <changelist id="b9e8551f-8aa1-41c4-8572-6748bfa47209" name="Default Changelist" comment="" />
+      <created>1598097334167</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1597487797374</updated>
+      <updated>1598097334167</updated>
     </task>
     <servers />
   </component>
@@ -59,9 +74,29 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="775" y="311" key="FileChooserDialogImpl" timestamp="1597740345945">
+    <state x="219" y="399" width="1543" height="315" key="#SQL_Dialects" timestamp="1598183139639">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="775" y="311" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1597740345945" />
+    <state x="219" y="399" width="1543" height="315" key="#SQL_Dialects/72.27.1848.1053@72.27.1848.1053" timestamp="1598183139639" />
+    <state x="775" y="311" key="FileChooserDialogImpl" timestamp="1598273455033">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="775" y="311" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1598273455033" />
+    <state width="1800" height="148" key="GridCell.Tab.0.bottom" timestamp="1598203552905">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="148" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1598203552905" />
+    <state width="1800" height="148" key="GridCell.Tab.0.center" timestamp="1598203552905">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="148" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1598203552905" />
+    <state width="1800" height="148" key="GridCell.Tab.0.left" timestamp="1598203552904">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="148" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1598203552904" />
+    <state width="1800" height="148" key="GridCell.Tab.0.right" timestamp="1598203552905">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="148" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1598203552905" />
   </component>
 </project>
