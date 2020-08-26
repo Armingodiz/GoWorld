@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>STORY : {{.Title}}</h1>
+<br>
+<br>
+<p>{{.Story}}</p>
+<br>
+<br>
+<h1>OPTIONS : </h1>
+<br>
+{{range .Options}}
+    <h3>{{.}}</h3>
+{{end}}
+<br>
+<br>
+<form action="/" method="POST">
+    <label for="option">CHOSE YOUR OPTION :</label>
+    <input type="text" id="option" name="option"><br><br>
+    <input type="submit" value="GO">
+</form>
+</body>
+</html>
