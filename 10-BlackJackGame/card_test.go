@@ -11,3 +11,7 @@ func TestString(t *testing.T) {
 	fmt.Println(card1.string())
 	fmt.Println(card2.string())
 }
+func TestNew(t *testing.T) {
+	deck := NewDeck()
+	fmt.Println(deck)
+}
