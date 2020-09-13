@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264bb800-2b95-48cf-a522-5bb8bcdd3ba2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/card_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/card_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-CLI Task Manager/.idea/10-hackerRanks.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-CLI Task Manager/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-CLI Task Manager/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-CLI Task Manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-CLI Task Manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-CLI Task Manager/card_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-CLI Task Manager/deck.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-CLI Task Manager/suit_string.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../quiz-game-Go/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../quiz-game-Go/.idea/quiz-game-Go.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../quiz-game-Go/.idea/workspace.xml" beforeDir="false" />

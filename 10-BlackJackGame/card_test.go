@@ -6,6 +6,8 @@ import (
 )
 
 func TestString(t *testing.T) {
-	var card = Card{Spade, Ace}
-	fmt.Println(card.string())
+	var card1 = Card{Spade, Ace}
+	var card2 = Card{Heart, King}
+	fmt.Println(card1.string())
+	fmt.Println(card2.string())
 }
