@@ -13,18 +13,37 @@ func TestString(t *testing.T) {
 }
 func TestNew(t *testing.T) {
 	deck := NewDeck()
-	fmt.Println(deck)
-	fmt.Println("############################################")
+	if len(deck)!= 13*4{
+		t.Errorf("WRONG NUMBER OF CARDS !")
+	}
 }
 func TestLess(t *testing.T) {
 	deck := NewDeck(Sort(Less))
-	fmt.Println(deck)
-	fmt.Println("############################################")
+	first := Card{
+		Suit: Spade,
+		Rank: minRank,
+	}
+	last := Card{
+		Suit: Heart,
+		Rank: maxRank,
+	}
+	if deck[0]!=first || deck[51]!=last{
+		t.Errorf("WRONG Order !")
+	}
 }
 func TestMore(t *testing.T) {
-	deck := NewDeck(Sort(More))
-	fmt.Println(deck)
-	fmt.Println("############################################")
+	deck := NewDeck(Sort(Less))
+	first := Card{
+		Suit: Spade,
+		Rank: minRank,
+	}
+	last := Card{
+		Suit: Heart,
+		Rank: maxRank,
+	}
+	if deck[0]!=last || deck[51]!=first{
+		t.Errorf("WRONG Order !")
+	}
 }
 func TestShuffle(t *testing.T) {
 	deck := NewDeck(Shuffle)
