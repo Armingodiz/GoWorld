@@ -81,7 +81,17 @@ func Sort(Less func(cards []Card) func(i, j int) bool) func(cards []Card) []Card
 		return cards
 	}
 }
-
+func Filter(condition func(card Card) bool) func(cards []Card) []Card {
+	return func(cards []Card) []Card {
+		var filtered []Card
+		for _, card := range cards {
+			if !condition(card) {
+				filtered = append(filtered, card)
+			}
+		}
+		return filtered
+	}
+}
 func Less(cards []Card) func(i, j int) bool {
 	return func(i, j int) bool {
 		return totalRank(cards[i]) < totalRank(cards[j])

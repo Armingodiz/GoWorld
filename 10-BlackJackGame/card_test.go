@@ -36,3 +36,11 @@ func TestAddJokers(t *testing.T) {
 	fmt.Println(deck)
 	fmt.Println("############################################")
 }
+func TestFilter(t *testing.T) {
+	condition := func(card Card) bool {
+		return card.Rank == minRank
+	}
+	deck := NewDeck(Filter(condition))
+	fmt.Println(deck)
+	fmt.Println("############################################")
+}
