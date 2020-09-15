@@ -77,7 +77,11 @@ func Less(cards []Card) func(i, j int) bool {
 		return totalRank(cards[i]) < totalRank(cards[j])
 	}
 }
-
+func More(cards []Card) func(i, j int) bool {
+	return func(i, j int) bool {
+		return totalRank(cards[i]) > totalRank(cards[j])
+	}
+}
 func totalRank(card Card) int {
 	return int(card.Suit)*int(maxRank) + int(card.Rank)
 }
