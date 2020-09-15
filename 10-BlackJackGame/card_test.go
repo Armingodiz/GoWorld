@@ -31,3 +31,8 @@ func TestShuffle(t *testing.T) {
 	fmt.Println(deck)
 	fmt.Println("############################################")
 }
+func TestAddJokers(t *testing.T) {
+	deck := NewDeck(AddJokers(5))
+	fmt.Println(deck)
+	fmt.Println("############################################")
+}

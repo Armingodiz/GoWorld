@@ -92,6 +92,17 @@ func More(cards []Card) func(i, j int) bool {
 		return totalRank(cards[i]) > totalRank(cards[j])
 	}
 }
+func AddJokers(n int) func(cards []Card) []Card {
+	return func(cards []Card) []Card {
+		for i := 0; i < n; i++ {
+			cards = append(cards, Card{
+				Suit: Joker,
+				Rank: Rank(i),
+			})
+		}
+		return cards
+	}
+}
 func totalRank(card Card) int {
 	return int(card.Suit)*int(maxRank) + int(card.Rank)
 }
