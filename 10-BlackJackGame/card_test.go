@@ -15,3 +15,7 @@ func TestNew(t *testing.T) {
 	deck := NewDeck()
 	fmt.Println(deck)
 }
+func TestLess(t *testing.T) {
+	deck := NewDeck(Sort(Less))
+	fmt.Println(deck)
+}

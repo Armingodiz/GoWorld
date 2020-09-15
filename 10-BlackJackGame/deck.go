@@ -3,6 +3,10 @@
 // and stringer do the rest
 package deck
 
+import (
+	"sort"
+)
+
 type Suit int8
 
 const (
@@ -47,12 +51,33 @@ type Card struct {
 func (card Card) string() string {
 	return card.Rank.String() + " of " + card.Suit.String() + "s"
 }
-func NewDeck() []Card {
+
+func NewDeck(opts ...func(cards []Card) []Card) []Card {
 	var deck []Card
 	for _, suit := range suites {
 		for rank := minRank; rank <= maxRank; rank++ {
 			deck = append(deck, Card{suit, rank})
 		}
 	}
+	for _, opt := range opts {
+		deck = opt(deck)
+	}
 	return deck
+}
+
+func Sort(Less func(cards []Card) func(i, j int) bool) func(cards []Card) []Card {
+	return func(cards []Card) []Card {
+		sort.Slice(cards, Less(cards))
+		return cards
+	}
+}
+
+func Less(cards []Card) func(i, j int) bool {
+	return func(i, j int) bool {
+		return totalRank(cards[i]) < totalRank(cards[j])
+	}
+}
+
+func totalRank(card Card) int {
+	return int(card.Suit)*int(maxRank) + int(card.Rank)
 }
