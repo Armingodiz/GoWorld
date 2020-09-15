@@ -44,3 +44,8 @@ func TestFilter(t *testing.T) {
 	fmt.Println(deck)
 	fmt.Println("############################################")
 }
+func TestMultipleDeck(t *testing.T) {
+	deck := NewDeck(MultipleDeck(2))
+	fmt.Println(deck)
+	fmt.Println("############################################")
+}

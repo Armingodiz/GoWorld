@@ -92,6 +92,17 @@ func Filter(condition func(card Card) bool) func(cards []Card) []Card {
 		return filtered
 	}
 }
+
+func MultipleDeck(n int) func(cards []Card) []Card {
+	return func(cards []Card) []Card {
+		var deck []Card
+		for i := 0; i < n; i++ {
+			deck = append(deck, cards...)
+		}
+		return deck
+	}
+}
+
 func Less(cards []Card) func(i, j int) bool {
 	return func(i, j int) bool {
 		return totalRank(cards[i]) < totalRank(cards[j])
