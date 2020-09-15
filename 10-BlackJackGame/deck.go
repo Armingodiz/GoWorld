@@ -4,7 +4,9 @@
 package deck
 
 import (
+	"math/rand"
 	"sort"
+	"time"
 )
 
 type Suit int8
@@ -64,7 +66,15 @@ func NewDeck(opts ...func(cards []Card) []Card) []Card {
 	}
 	return deck
 }
-
+func Shuffle(cards []Card) []Card {
+	shuffled := make([]Card, len(cards))
+	r := rand.New(rand.NewSource(time.Now().Unix()))
+	parm := r.Perm(len(cards))
+	for i, j := range parm {
+		shuffled[i] = cards[j]
+	}
+	return shuffled
+}
 func Sort(Less func(cards []Card) func(i, j int) bool) func(cards []Card) []Card {
 	return func(cards []Card) []Card {
 		sort.Slice(cards, Less(cards))
