@@ -17,6 +17,7 @@ type Player struct {
 type User interface {
 	userTurn() int
 	play() int
+	getScore() int
 }
 
 var cards []deck.Card
@@ -44,8 +45,32 @@ func Start(users []User) {
 		}
 	}
 	if status == 0 || (status < 0 && status*-1 != len(users)) {
-		dealer.userTurn()
+		status = dealer.userTurn()
+		if status == 0 {
+			max, _ := scoring(dealer.Cards)
+			maxIndex := -1
+			for i, user := range users {
+				if user.getScore() > max {
+					max = user.getScore()
+					maxIndex = i
+				}
+			}
+			if maxIndex == -1 {
+				fmt.Println("DEALER WON !")
+			} else {
+				fmt.Println("WINNER IS :")
+				fmt.Println(users[maxIndex])
+			}
+		}
 	}
+}
+func (player *Player) getScore() int {
+	score, _ := scoring(player.Cards)
+	return score
+}
+func (dealer *Dealer) getScore() int {
+	score, _ := scoring(dealer.Cards)
+	return score
 }
 func scoring(deckCard []deck.Card) (int, string) {
 	var score = 0
@@ -60,12 +85,12 @@ func scoring(deckCard []deck.Card) (int, string) {
 			score += int(card.Rank)
 		}
 	}
-	if Type=="ace"{
-		if score==7 {
-			score=17
-			Type="soft"
-		}else if score<=11{
-			score+=10
+	if Type == "ace" {
+		if score == 7 {
+			score = 17
+			Type = "soft"
+		} else if score <= 11 {
+			score += 10
 		}
 	}
 	return score, Type
