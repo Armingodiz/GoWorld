@@ -65,6 +65,24 @@ func (dealer *Dealer) play() int {
 	fmt.Scan(&input)
 	switch input {
 	case 1:
+		score, Type := scoring(dealer.Cards)
+		if score < 16 || (score == 17 && Type == "soft") {
+			dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
+			holder += 1
+			score, _ := scoring(dealer.Cards)
+			if score == 21 {
+				fmt.Println("DEALER WON !")
+				return 1
+			} else if score > 21 {
+				fmt.Println("DEALER LOST !")
+				return -1
+			} else {
+				dealer.play()
+			}
+		} else {
+			fmt.Println("YOU CANT HIT !")
+			break
+		}
 	case 2:
 		break
 	}
