@@ -47,9 +47,27 @@ func Start(users []User) {
 		dealer.userTurn()
 	}
 }
-func scoring(cards []deck.Card) (int, string) {
+func scoring(deckCard []deck.Card) (int, string) {
 	var score = 0
 	var Type = "normal"
+	for _, card := range deckCard {
+		if card.Rank == deck.King || card.Rank == deck.Quin || card.Rank == deck.Jack {
+			score += 10
+		} else if card.Rank == deck.Ace {
+			score += 1
+			Type = "ace"
+		} else {
+			score += int(card.Rank)
+		}
+	}
+	if Type=="ace"{
+		if score==7 {
+			score=17
+			Type="soft"
+		}else if score<=11{
+			score+=10
+		}
+	}
 	return score, Type
 }
 
