@@ -44,6 +44,7 @@ func Start(users []User) {
 			break
 		}
 	}
+	fmt.Println(status)
 	if status == 0 || (status < 0 && status*-1 != len(users)) {
 		status = dealer.userTurn()
 		if status == 0 {
@@ -105,12 +106,14 @@ func (dealer *Dealer) userTurn() int {
 func (dealer *Dealer) play() int {
 	fmt.Println("1 ) HIT \n2 ) STAND ")
 	var input int
+	var code = 0
 	fmt.Scan(&input)
 	switch input {
 	case 1:
 		score, Type := scoring(dealer.Cards)
 		if score < 16 || (score == 17 && Type == "soft") {
-			dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
+			dealer.Cards = append(dealer.Cards, cards[holder])
+			fmt.Println("NEW CARD : " + cards[holder].Rank.String() + " OF " + cards[holder].Suit.String())
 			holder += 1
 			score, _ := scoring(dealer.Cards)
 			if score == 21 {
@@ -120,7 +123,7 @@ func (dealer *Dealer) play() int {
 				fmt.Println("DEALER LOST !")
 				return -1
 			} else {
-				dealer.play()
+				code = dealer.play()
 			}
 		} else {
 			fmt.Println("YOU CANT HIT !")
@@ -129,7 +132,7 @@ func (dealer *Dealer) play() int {
 	case 2:
 		break
 	}
-	return 0
+	return code
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -143,12 +146,14 @@ func (player *Player) userTurn() int {
 	return player.play()
 }
 func (player *Player) play() int { // 0 for stand , 1 for win , -1  for lose
+	var code = 0
 	fmt.Println("1 ) HIT \n2 ) STAND ")
 	var input int
 	fmt.Scan(&input)
 	switch input {
 	case 1:
-		player.Cards = append(player.Cards, cards[holder], cards[holder+1])
+		player.Cards = append(player.Cards, cards[holder])
+		fmt.Println("NEW CARD : " + cards[holder].Rank.String() + " OF " + cards[holder].Suit.String())
 		holder += 1
 		score, _ := scoring(player.Cards)
 		if score == 21 {
@@ -158,7 +163,7 @@ func (player *Player) play() int { // 0 for stand , 1 for win , -1  for lose
 			fmt.Println("PLAYER " + player.NickName + " LOST !")
 			return -1
 		} else {
-			player.play()
+			code = player.play()
 		}
 	case 2:
 		break
@@ -166,7 +171,7 @@ func (player *Player) play() int { // 0 for stand , 1 for win , -1  for lose
 		fmt.Println("INVALID INPUT !")
 		player.play()
 	}
-	return 0
+	return code
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
