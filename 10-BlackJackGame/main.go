@@ -29,11 +29,17 @@ func main() {
 	dealer = Dealer{[]deck.Card{}, 0}
 	dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
 	holder += 2
-	player := Player{"armin", 0, []deck.Card{}}
-	player2 := Player{"saba", 0, []deck.Card{}}
+	fmt.Println("ENTER NUMBER OF PLAYERS : ")
 	users := []User{}
-	users = append(users, &player)
-	users = append(users, &player2)
+	var n int
+	var name string
+	fmt.Scan(&n)
+	for i := 0; i < n; i++ {
+		fmt.Println("ENTER NICK NAME FOR PLAYER : ")
+		fmt.Scan(&name)
+		player := Player{name, 0, []deck.Card{}}
+		users = append(users, &player)
+	}
 	Start(users)
 }
 
