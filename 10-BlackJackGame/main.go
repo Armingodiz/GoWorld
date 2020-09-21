@@ -57,6 +57,10 @@ func Start(users []User) {
 			}
 			if maxIndex == -1 {
 				fmt.Println("DEALER WON !")
+				fmt.Print("CARDS : ")
+				for _, card := range dealer.Cards {
+					fmt.Print("***  " + card.Rank.String() + " OF " + card.Suit.String() + "s" + "  ***")
+				}
 			} else {
 				fmt.Println("WINNER IS :")
 				fmt.Println(users[maxIndex])
@@ -99,39 +103,50 @@ func scoring(deckCard []deck.Card) (int, string) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////// DEALER PART :
 func (dealer *Dealer) userTurn() int {
 	fmt.Println("DEALER TURN : ")
-	fmt.Println(dealer)
 	return dealer.play()
 }
 func (dealer *Dealer) play() int {
-	fmt.Println("1 ) HIT \n2 ) STAND ")
 	var input int
 	var code = 0
-	fmt.Scan(&input)
+	score, Type := scoring(dealer.Cards)
+	input = dealerAI(score, Type)
 	switch input {
 	case 1:
-		score, Type := scoring(dealer.Cards)
-		if score < 16 || (score == 17 && Type == "soft") {
-			dealer.Cards = append(dealer.Cards, cards[holder])
-			fmt.Println("NEW CARD : " + cards[holder].Rank.String() + " OF " + cards[holder].Suit.String())
-			holder += 1
-			score, _ := scoring(dealer.Cards)
-			if score == 21 {
-				fmt.Println("DEALER WON !")
-				return 1
-			} else if score > 21 {
-				fmt.Println("DEALER LOST !")
-				return -1
-			} else {
-				code = dealer.play()
+		dealer.Cards = append(dealer.Cards, cards[holder])
+		fmt.Println("NEW CARD : " + cards[holder].Rank.String() + " OF " + cards[holder].Suit.String())
+		holder += 1
+		score, _ := scoring(dealer.Cards)
+		if score == 21 {
+			fmt.Println("DEALER WON !")
+			fmt.Print("CARDS : ")
+			for _, card := range dealer.Cards {
+				fmt.Print("***  " + card.Rank.String() + " OF " + card.Suit.String() + "s" + "  ***")
 			}
+			return 1
+		} else if score > 21 {
+			fmt.Println("DEALER LOST !")
+			fmt.Print("CARDS : ")
+			for _, card := range dealer.Cards {
+				fmt.Print("***  " + card.Rank.String() + " OF " + card.Suit.String() + "s" + "  ***")
+			}
+			return -1
 		} else {
-			fmt.Println("YOU CANT HIT !")
-			break
+			code = dealer.play()
 		}
 	case 2:
+		fmt.Println("DEALER STANDS !")
 		break
 	}
 	return code
+}
+func dealerAI(score int, Type string) int {
+	opt := 0
+	if score < 16 || (score == 17 && Type == "soft") {
+		opt = 1
+	} else {
+		opt = 2
+	}
+	return opt
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
