@@ -30,8 +30,10 @@ func main() {
 	dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
 	holder += 2
 	player := Player{"armin", 0, []deck.Card{}}
+	player2 := Player{"saba", 0, []deck.Card{}}
 	users := []User{}
 	users = append(users, &player)
+	users = append(users, &player2)
 	Start(users)
 }
 
@@ -43,31 +45,30 @@ func Start(users []User) {
 			break
 		}
 	}
-	fmt.Println(status)
 	if status == 0 || (status < 0 && status*-1 != len(users)) {
 		status = dealer.userTurn()
-		if status == 0 {
-			max, _ := scoring(dealer.Cards)
-			maxIndex := -1
-			for i, user := range users {
-				if user.getScore() > max {
-					max = user.getScore()
-					maxIndex = i
-				}
+		max, _ := scoring(dealer.Cards)
+		maxIndex := -1
+		for i, user := range users {
+			score := user.getScore()
+			if score > max && score <= 21 {
+				max = score
+				maxIndex = i
 			}
-			if maxIndex == -1 {
-				fmt.Println("DEALER WON !")
-				fmt.Print("CARDS : ")
-				for _, card := range dealer.Cards {
-					fmt.Print("***  " + card.Rank.String() + " OF " + card.Suit.String() + "s" + "  ***")
-				}
-			} else {
-				fmt.Println("WINNER IS :")
-				fmt.Println(users[maxIndex])
+		}
+		if maxIndex == -1 {
+			fmt.Println("DEALER WON !")
+			fmt.Print("CARDS : ")
+			for _, card := range dealer.Cards {
+				fmt.Print("***  " + card.Rank.String() + " OF " + card.Suit.String() + "s" + "  ***")
 			}
+		} else {
+			fmt.Println("WINNER IS :")
+			fmt.Println(users[maxIndex])
 		}
 	}
 }
+
 func (player *Player) getScore() int {
 	score, _ := scoring(player.Cards)
 	return score
