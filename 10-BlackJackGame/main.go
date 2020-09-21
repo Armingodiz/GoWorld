@@ -26,7 +26,6 @@ var dealer Dealer
 
 func main() {
 	cards = deck.NewDeck(deck.MultipleDeck(2), deck.Shuffle)
-	fmt.Println(cards)
 	dealer = Dealer{[]deck.Card{}, 0}
 	dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
 	holder += 2
@@ -141,11 +140,15 @@ func (player *Player) userTurn() int {
 	fmt.Println("PLAYER " + player.NickName + " TURN : ")
 	player.Cards = append(player.Cards, cards[holder], cards[holder+1])
 	holder += 2
-	fmt.Println(player)
 	fmt.Println("DEALER CARD IS : " + dealer.Cards[0].Rank.String() + " OF " + dealer.Cards[0].Suit.String() + "s")
 	return player.play()
 }
 func (player *Player) play() int { // 0 for stand , 1 for win , -1  for lose
+	fmt.Print("YOUR CARDS : ")
+	for _, card := range player.Cards {
+		fmt.Print("***  " + card.Rank.String() + " OF " + card.Suit.String() + "s" + "  ***")
+	}
+	fmt.Println()
 	var code = 0
 	fmt.Println("1 ) HIT \n2 ) STAND ")
 	var input int
