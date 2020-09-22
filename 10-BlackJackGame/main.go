@@ -26,11 +26,11 @@ var cards []deck.Card
 var holder = 0
 var dealer Dealer
 var users = []User{}
-var bet int
 
 func main() {
 	cards = deck.NewDeck(deck.MultipleDeck(3), deck.Shuffle)
 	for {
+		fmt.Println()
 		fmt.Println("1 ) NEW GAME \n2 ) PLAY AGAIN ")
 		var opt int
 		fmt.Scan(&opt)
@@ -51,22 +51,17 @@ func main() {
 
 func start() {
 	dealer = Dealer{[]deck.Card{}, 0}
+	users := []User{}
 	dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
 	holder += 2
-	fmt.Println("ENTER BET : ")
-	var inp int
-	fmt.Scan(&inp)
-	bet = inp
 	fmt.Println("ENTER NUMBER OF BOTS : ")
 	var n2 int
 	fmt.Scan(&n2)
 	for i := 0; i < n2; i++ {
-		fmt.Println("ENTER NICK NAME FOR PLAYER : ")
 		player := Player{"BOT" + string(i+1), 0, []deck.Card{}, true}
 		users = append(users, &player)
 	}
 	fmt.Println("ENTER NUMBER OF PLAYERS : ")
-	users := []User{}
 	var n int
 	var name string
 	fmt.Scan(&n)
@@ -76,16 +71,13 @@ func start() {
 		player := Player{name, 0, []deck.Card{}, false}
 		users = append(users, &player)
 	}
+	fmt.Println(users)
 	game(users)
 }
 func playAgain() {
 	for _, user := range users {
 		user.resetCards()
 	}
-	fmt.Println("ENTER NEW BET : ")
-	var inp int
-	fmt.Scan(&inp)
-	bet = inp
 	game(users)
 }
 func game(users []User) {
@@ -99,6 +91,9 @@ func game(users []User) {
 	if status == 0 || (status < 0 && status*-1 != len(users)) {
 		status = dealer.userTurn()
 		max, _ := scoring(dealer.Cards)
+		if max > 21 {
+			max = 0
+		}
 		maxIndex := -1
 		for i, user := range users {
 			score := user.getScore()
@@ -154,6 +149,7 @@ func scoring(deckCard []deck.Card) (int, string) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////// DEALER PART :
 func (dealer *Dealer) userTurn() int {
+	fmt.Println("############################################################################################")
 	fmt.Println("DEALER TURN : ")
 	return dealer.play()
 }
@@ -209,6 +205,7 @@ func (dealer *Dealer) resetCards() {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////// DEALER PART :
 func (player *Player) userTurn() int {
+	fmt.Println("#######################################################################################")
 	fmt.Println("PLAYER " + player.NickName + " TURN : ")
 	player.Cards = append(player.Cards, cards[holder], cards[holder+1])
 	holder += 2
@@ -223,10 +220,13 @@ func (player *Player) play() int { // 0 for stand , 1 for win , -1  for lose
 	fmt.Println()
 	var code = 0
 	var input int
-	//fmt.Println("1 ) HIT \n2 ) STAND ")
-	//fmt.Scan(&input)
-	scor, _ := scoring(player.Cards)
-	input = playerAI(scor)
+	if player.IsBot {
+		scor, _ := scoring(player.Cards)
+		input = playerAI(scor)
+	} else {
+		fmt.Println("1 ) HIT \n2 ) STAND ")
+		fmt.Scan(&input)
+	}
 	switch input {
 	case 1:
 		player.Cards = append(player.Cards, cards[holder])

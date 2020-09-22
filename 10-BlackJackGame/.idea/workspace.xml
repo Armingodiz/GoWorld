@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264bb800-2b95-48cf-a522-5bb8bcdd3ba2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,22 +91,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1800" height="82" key="GridCell.Tab.0.bottom" timestamp="1600773667318">
+    <state width="1800" height="74" key="GridCell.Tab.0.bottom" timestamp="1600809217111">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="82" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600773667318" />
-    <state width="1800" height="82" key="GridCell.Tab.0.center" timestamp="1600773667318">
+    <state width="1800" height="74" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600809217111" />
+    <state width="1800" height="74" key="GridCell.Tab.0.center" timestamp="1600809217110">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="82" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600773667318" />
-    <state width="1800" height="82" key="GridCell.Tab.0.left" timestamp="1600773667317">
+    <state width="1800" height="74" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600809217110" />
+    <state width="1800" height="74" key="GridCell.Tab.0.left" timestamp="1600809217110">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="82" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600773667317" />
-    <state width="1800" height="82" key="GridCell.Tab.0.right" timestamp="1600773667318">
+    <state width="1800" height="74" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600809217110" />
+    <state width="1800" height="74" key="GridCell.Tab.0.right" timestamp="1600809217111">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="82" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600773667318" />
+    <state width="1800" height="74" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600809217111" />
     <state x="812" y="312" width="358" height="490" key="refactoring.ChangeSignatureDialog" timestamp="1600619316972">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
