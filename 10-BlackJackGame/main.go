@@ -18,14 +18,35 @@ type User interface {
 	userTurn() int
 	play() int
 	getScore() int
+	resetCards()
 }
 
 var cards []deck.Card
 var holder = 0
 var dealer Dealer
+var users = []User{}
 
 func main() {
-	cards = deck.NewDeck(deck.MultipleDeck(2), deck.Shuffle)
+	cards = deck.NewDeck(deck.MultipleDeck(3), deck.Shuffle)
+	for {
+		fmt.Println("1 ) NEW GAME \n2 ) PLAY AGAIN ")
+		var opt int
+		fmt.Scan(&opt)
+		switch opt {
+		case 1:
+			start()
+		case 2:
+			if len(users) != 0 {
+				playAgain()
+			} else {
+				fmt.Println("YOU DONT HAVE A OPEN GAME !")
+			}
+		default:
+			fmt.Println("INVALID INPUT !")
+		}
+	}
+}
+func start() {
 	dealer = Dealer{[]deck.Card{}, 0}
 	dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
 	holder += 2
@@ -40,10 +61,15 @@ func main() {
 		player := Player{name, 0, []deck.Card{}}
 		users = append(users, &player)
 	}
-	Start(users)
+	game(users)
 }
-
-func Start(users []User) {
+func playAgain() {
+	for _, user := range users {
+		user.resetCards()
+	}
+	game(users)
+}
+func game(users []User) {
 	var status = 0
 	for _, user := range users {
 		status += user.userTurn()
@@ -155,6 +181,11 @@ func dealerAI(score int, Type string) int {
 	}
 	return opt
 }
+func (dealer *Dealer) resetCards() {
+	dealer.Cards = []deck.Card{}
+	dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
+	holder += 2
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////// DEALER PART :
@@ -197,6 +228,11 @@ func (player *Player) play() int { // 0 for stand , 1 for win , -1  for lose
 		player.play()
 	}
 	return code
+}
+func (player *Player) resetCards() {
+	player.Cards = []deck.Card{}
+	player.Cards = append(player.Cards, cards[holder], cards[holder+1])
+	holder += 2
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
