@@ -71,7 +71,6 @@ func start() {
 		player := Player{name, 0, []deck.Card{}, false}
 		users = append(users, &player)
 	}
-	fmt.Println(users)
 	game(users)
 }
 func playAgain() {
