@@ -13,6 +13,7 @@ type Player struct {
 	NickName string
 	Status   int // 0 for stand , 1 for win , -1  for lose
 	Cards    []deck.Card
+	IsBot    bool
 }
 type User interface {
 	userTurn() int
@@ -25,6 +26,7 @@ var cards []deck.Card
 var holder = 0
 var dealer Dealer
 var users = []User{}
+var bet int
 
 func main() {
 	cards = deck.NewDeck(deck.MultipleDeck(3), deck.Shuffle)
@@ -46,10 +48,23 @@ func main() {
 		}
 	}
 }
+
 func start() {
 	dealer = Dealer{[]deck.Card{}, 0}
 	dealer.Cards = append(dealer.Cards, cards[holder], cards[holder+1])
 	holder += 2
+	fmt.Println("ENTER BET : ")
+	var inp int
+	fmt.Scan(&inp)
+	bet = inp
+	fmt.Println("ENTER NUMBER OF BOTS : ")
+	var n2 int
+	fmt.Scan(&n2)
+	for i := 0; i < n2; i++ {
+		fmt.Println("ENTER NICK NAME FOR PLAYER : ")
+		player := Player{"BOT" + string(i+1), 0, []deck.Card{}, true}
+		users = append(users, &player)
+	}
 	fmt.Println("ENTER NUMBER OF PLAYERS : ")
 	users := []User{}
 	var n int
@@ -58,7 +73,7 @@ func start() {
 	for i := 0; i < n; i++ {
 		fmt.Println("ENTER NICK NAME FOR PLAYER : ")
 		fmt.Scan(&name)
-		player := Player{name, 0, []deck.Card{}}
+		player := Player{name, 0, []deck.Card{}, false}
 		users = append(users, &player)
 	}
 	game(users)
@@ -67,6 +82,10 @@ func playAgain() {
 	for _, user := range users {
 		user.resetCards()
 	}
+	fmt.Println("ENTER NEW BET : ")
+	var inp int
+	fmt.Scan(&inp)
+	bet = inp
 	game(users)
 }
 func game(users []User) {
@@ -203,9 +222,11 @@ func (player *Player) play() int { // 0 for stand , 1 for win , -1  for lose
 	}
 	fmt.Println()
 	var code = 0
-	fmt.Println("1 ) HIT \n2 ) STAND ")
 	var input int
-	fmt.Scan(&input)
+	//fmt.Println("1 ) HIT \n2 ) STAND ")
+	//fmt.Scan(&input)
+	scor, _ := scoring(player.Cards)
+	input = playerAI(scor)
 	switch input {
 	case 1:
 		player.Cards = append(player.Cards, cards[holder])
@@ -233,6 +254,12 @@ func (player *Player) resetCards() {
 	player.Cards = []deck.Card{}
 	player.Cards = append(player.Cards, cards[holder], cards[holder+1])
 	holder += 2
+}
+func playerAI(score int) int {
+	if int(dealer.Cards[0].Rank) > score || score <= 11 || int(dealer.Cards[0].Rank) > score/2 && score <= 16 {
+		return 1
+	}
+	return 2
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
