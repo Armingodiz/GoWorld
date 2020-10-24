@@ -2,4 +2,4 @@
 
 
 A playground for trainings and some mini projects ! 
-![pic](https://github.com/hawwwdi/Goxam/blob/master/assets/cs.png)
+![pic](https://files.virgool.io/upload/users/820/posts/iamu71api8o3/vv1dulxorpc1.png)
