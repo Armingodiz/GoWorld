@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"encoding/hex"
 	"fmt"
-	"github.com/Armingodiz/go-stuff/SecretsCLI&API/encryptor"
+	encryptor "github.com/Armingodiz/go-stuff/API&CLI/encryptor"
 )
 
 func main() {
