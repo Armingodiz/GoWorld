@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/Armingodiz/GoWebDewTraining/10-BlackJackGame/deck"
+	"github.com/Armingodiz/go-stuff/miniProjects/BlackJackGame/deck"
 )
 
 type Dealer struct {
