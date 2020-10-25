@@ -10,7 +10,7 @@ import (
 )
 
 
-func encrypt(stringToEncrypt string, keyString string) (encryptedString string) {
+func Encrypt(stringToEncrypt string, keyString string) (encryptedString string) {
 
 	//Since the key is in string, we need to convert decode it to bytes
 	key, _ := hex.DecodeString(keyString)
@@ -41,7 +41,7 @@ func encrypt(stringToEncrypt string, keyString string) (encryptedString string) 
 	return fmt.Sprintf("%x", ciphertext)
 }
 
-func decrypt(encryptedString string, keyString string) (decryptedString string) {
+func Decrypt(encryptedString string, keyString string) (decryptedString string) {
 
 	key, _ := hex.DecodeString(keyString)
 	enc, _ := hex.DecodeString(encryptedString)

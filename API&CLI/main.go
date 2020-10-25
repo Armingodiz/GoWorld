@@ -1,9 +1,10 @@
 package main
 
 import (
+	"crypto/rand"
 	"encoding/hex"
 	"fmt"
-	"gi"
+	"github.com/Armingodiz/go-stuff/SecretsCLI&API/encryptor"
 )
 
 func main() {
@@ -15,9 +16,9 @@ func main() {
 	key := hex.EncodeToString(bytes) //encode key in bytes to string and keep as secret, put in a vault
 	fmt.Printf("key to encrypt/decrypt : %s\n", key)
 
-	encrypted :=  encrypt("Hello Encrypt", key)
+	encrypted := encryptor.Encrypt("Hello Encrypt", key)
 	fmt.Printf("encrypted : %s\n", encrypted)
 
-	decrypted := decrypt(encrypted, key)
+	decrypted :=encryptor.Decrypt(encrypted, key)
 	fmt.Printf("decrypted : %s\n", decrypted)
 }
