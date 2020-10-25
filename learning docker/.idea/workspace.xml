@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07871741-84d2-4396-8441-6c4bdcb9a90c" name="Default Changelist" comment="" />
+    <list default="true" id="07871741-84d2-4396-8441-6c4bdcb9a90c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +37,22 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learning docker" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/with dependencies/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learning docker" />
       <working_directory value="$PROJECT_DIR$" />
@@ -43,6 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -60,5 +81,23 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1800" height="118" key="GridCell.Tab.0.bottom" timestamp="1603614911944">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="118" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603614911944" />
+    <state width="1800" height="118" key="GridCell.Tab.0.center" timestamp="1603614911944">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="118" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603614911944" />
+    <state width="1800" height="118" key="GridCell.Tab.0.left" timestamp="1603614911943">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="118" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603614911943" />
+    <state width="1800" height="118" key="GridCell.Tab.0.right" timestamp="1603614911944">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="118" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603614911944" />
   </component>
 </project>
