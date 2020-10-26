@@ -4,21 +4,18 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
+	"github.com/Armingodiz/go-stuff/apisaver/dataHandler"
 )
 
 // getCmd represents the get command
 var getCmd = &cobra.Command{
 	Use:   "get",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "this command will get you decryoted api secret with inputted key and name",
 	Run: func(cmd *cobra.Command, args []string) {
-
+		fmt.Print("received key :")
 		fmt.Println(key)
+		fmt.Print("received name :  ")
+		fmt.Println(args[0])
 	},
 }
 
@@ -34,4 +31,9 @@ func init() {
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
 	// getCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+}
+
+func getApi(name,key string) string{
+	apiSecret := dataHandler.LoadApi(name,key)
+	return apiSecret
 }
