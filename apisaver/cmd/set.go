@@ -2,16 +2,18 @@ package cmd
 
 import (
 	"fmt"
-	"strings"
+
 
 	"github.com/spf13/cobra"
 )
 
 var Set = &cobra.Command{
 	Use:   "set",
-	Short: "Adds a task to your task list.",
+	Short: "this Command will save your api secret key in encrypted mode",
 	Run: func(cmd *cobra.Command, args []string) {
+    //TODO completing set func
 		fmt.Println(args)
+    fmt.Println("ADDED")
 	},
 }
 
