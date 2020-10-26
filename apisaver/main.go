@@ -1,14 +1,16 @@
 package main
 
 import (
-	"crypto/rand"
+	/*"crypto/rand"
 	"encoding/hex"
 	"fmt"
-	encryptor "github.com/Armingodiz/go-stuff/API&CLI/encryptor"
+	encryptor "github.com/Armingodiz/go-stuff/apisaver/encryptor"*/
+	"github.com/Armingodiz/go-stuff/apisaver/cmd"
 )
 
 func main() {
-	bytes := make([]byte, 32) //generate a random 32 byte key for AES-256
+	cmd.RootCmd.Execute()
+	/*bytes := make([]byte, 32) //generate a random 32 byte key for AES-256
 	if _, err := rand.Read(bytes); err != nil {
 		panic(err.Error())
 	}
@@ -20,5 +22,5 @@ func main() {
 	fmt.Printf("encrypted : %s\n", encrypted)
 
 	decrypted :=encryptor.Decrypt(encrypted, key)
-	fmt.Printf("decrypted : %s\n", decrypted)
+	fmt.Printf("decrypted : %s\n", decrypted)*/
 }
