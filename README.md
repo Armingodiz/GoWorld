@@ -3,6 +3,19 @@
 
 A playground for trainings and some mini projects ! 
 
+
+
+Projects : 
+
+* [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
+* [Api saver Cli](https://github.com/Armingodiz/go-stuff/tree/master/apisaver)
+* [twitter-bot](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/go-twitter-bot)
+* [quiz-game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/quiz-game-Go)
+* [login-system](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20login-system)
+* [decide game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20WebApp%20to%20practice%20using%20json)
+
+
+
 Usefull Links : 
 
 For working with json files:
@@ -22,6 +35,4 @@ https://tutorialedge.net/golang/go-docker-tutorial/
 
 
 
-Projects : 
 
-* [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
