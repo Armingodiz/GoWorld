@@ -58,4 +58,7 @@ func main() {
 	// jsonFile's content into 'users' which we defined above
 	json.Unmarshal(byteValue, &rankings)
 	fmt.Println(rankings.Users)
+	for _, value := range rankings.Users {
+		fmt.Println(value)
+	}
 }
