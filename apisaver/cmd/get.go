@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
 	"github.com/Armingodiz/go-stuff/apisaver/dataHandler"
+	"github.com/spf13/cobra"
 )
 
 // getCmd represents the get command
@@ -33,7 +33,7 @@ func init() {
 	// getCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 
-func getApi(name,key string) string{
-	apiSecret := dataHandler.LoadApi(name,key)
+func getApi(name, key string) string {
+	apiSecret := dataHandler.LoadApi(name, key)
 	return apiSecret
 }
