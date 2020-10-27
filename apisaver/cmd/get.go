@@ -16,6 +16,7 @@ var getCmd = &cobra.Command{
 		fmt.Println(key)
 		fmt.Print("received name :  ")
 		fmt.Println(args[0])
+		fmt.Println(getApi(args[0], key))
 	},
 }
 

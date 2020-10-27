@@ -38,11 +38,10 @@ func readApiSecrets() *Secrets {
 	// jsonFile's content into 'users' which we defined above
 	json.Unmarshal(byteValue, ApiSecrets2)
 	if ApiSecrets2.Secrets == nil {
-		fmt.Println("#################################################################33")
+		fmt.Println("your list is empty")
 		ApiSecrets2 = &Secrets{
 			Secrets: []ApiSecret{},
 		}
 	}
-	fmt.Println(ApiSecrets2.Secrets)
 	return ApiSecrets2
 }

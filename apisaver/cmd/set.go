@@ -17,6 +17,7 @@ var setCmd = &cobra.Command{
 		//TODO completing set func
 		fmt.Print("name of api secret : ")
 		fmt.Println(args[0])
+		//TODO working on getting and passing api secret(getting it with spaces also)
 		fmt.Print("received api secret :")
 		fmt.Println(args[1])
 		setApi(args[0], args[1])
