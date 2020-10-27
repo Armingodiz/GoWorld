@@ -19,3 +19,9 @@ https://tutorialedge.net/golang/go-docker-tutorial/
 
 
 ![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
+
+
+
+Projects : 
+
+* [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
