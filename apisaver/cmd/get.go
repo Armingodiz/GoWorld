@@ -12,11 +12,11 @@ var getCmd = &cobra.Command{
 	Use:   "get",
 	Short: "this command will get you decryoted api secret with inputted key and name",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Print("received key :")
+		fmt.Print("	received key :")
 		fmt.Println(key)
-		fmt.Print("received name :  ")
+		fmt.Print("	received name :  ")
 		fmt.Println(args[0])
-		fmt.Println(getApi(args[0], key))
+		getApi(args[0], key)
 	},
 }
 

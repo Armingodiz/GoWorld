@@ -8,11 +8,11 @@ import (
 func LoadApi(name, key string) string {
 	encrypted, ok := getEncrypted(name)
 	if !ok {
-		fmt.Println("error in loading api key !!")
+		fmt.Println("	error in loading api key !!")
 		return ""
 	} else {
 		decrypted := encryptor.Decrypt(encrypted, key)
-		fmt.Printf("decrypted : %s\n", decrypted)
+		fmt.Printf("	decrypted : %s\n", decrypted)
 		return decrypted
 	}
 }

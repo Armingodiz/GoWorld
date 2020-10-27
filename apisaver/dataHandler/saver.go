@@ -21,6 +21,6 @@ func SaveData(name, api, key string) {
 	jsonString, _ := json.Marshal(data)
 	err := ioutil.WriteFile("secrets.json", jsonString, 0644)
 	if err != nil {
-		fmt.Println("error in writing on json !")
+		fmt.Println("	error in writing on json !")
 	}
 }
