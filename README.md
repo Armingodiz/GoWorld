@@ -34,6 +34,13 @@ For Using github.com/spf13/cobra :
 https://courses.calhoun.io/lessons/les_goph_36
 
 
+Learning Path TODO : 
+
+Worker Pools 
+
+WaitGroups
+
+
 
 ![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
 
