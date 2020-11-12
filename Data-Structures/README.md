@@ -1,27 +1,8 @@
-# go-stuff
+some usefull implementions for data structures such as binary search tree , linked-list and sorts like merge sort ! 
 
 
-A playground for trainings and some mini projects ! 
+TODO : 
 
-Usefull Links : 
-
-For working with json files:
-
-https://mholt.github.io/json-to-go/   
-
-For DOCKER : 
-
-https://www.docker.com/blog/docker-golang/ 
-
-
-https://tutorialedge.net/golang/go-docker-tutorial/
-
-
-
-![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
-
-
-
-Projects : 
-
-* [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
+    adding Red-black tree implemention 
+    
+    deviding Heap ds and heapSort 
