@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d8fd866f-3380-4069-a098-0eb65ee82db0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/get.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/get.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/root.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/root.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/set.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/set.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHandler/jsonHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/dataHandler/jsonHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHandler/loader.go" beforeDir="false" afterPath="$PROJECT_DIR$/dataHandler/loader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataHandler/saver.go" beforeDir="false" afterPath="$PROJECT_DIR$/dataHandler/saver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +36,9 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tsssss.go" />
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build main.go tsssss.go">
     <configuration name="go build github.com/Armingodiz/go-stuff/apisaver/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="apisaver" />
       <working_directory value="$PROJECT_DIR$" />
@@ -56,18 +48,22 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go tsssss.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="apisaver" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$/main.go|$PROJECT_DIR$/tsssss.go" />
       <package value="github.com/Armingodiz/go-stuff/apisaver" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build github.com/Armingodiz/go-stuff/apisaver/cmd" />
+      <item itemvalue="Go Build.go build main.go tsssss.go" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build main.go tsssss.go" />
         <item itemvalue="Go Build.go build github.com/Armingodiz/go-stuff/apisaver/cmd" />
       </list>
     </recent_temporary>
@@ -90,21 +86,29 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1800" height="147" key="GridCell.Tab.0.bottom" timestamp="1603745325149">
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604003695905">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="147" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1603745325149" />
-    <state width="1800" height="147" key="GridCell.Tab.0.center" timestamp="1603745325148">
+    <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604003695905" />
+    <state x="775" y="311" key="FileChooserDialogImpl" timestamp="1604003694105">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="147" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1603745325148" />
-    <state width="1800" height="147" key="GridCell.Tab.0.left" timestamp="1603745325148">
+    <state x="775" y="311" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1604003694105" />
+    <state width="1800" height="171" key="GridCell.Tab.0.bottom" timestamp="1604003729668">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="147" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1603745325148" />
-    <state width="1800" height="147" key="GridCell.Tab.0.right" timestamp="1603745325149">
+    <state width="1800" height="171" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1604003729668" />
+    <state width="1800" height="171" key="GridCell.Tab.0.center" timestamp="1604003729668">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1800" height="147" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603745325149" />
+    <state width="1800" height="171" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1604003729668" />
+    <state width="1800" height="171" key="GridCell.Tab.0.left" timestamp="1604003729667">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="171" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1604003729667" />
+    <state width="1800" height="171" key="GridCell.Tab.0.right" timestamp="1604003729668">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1800" height="171" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604003729668" />
   </component>
 </project>
