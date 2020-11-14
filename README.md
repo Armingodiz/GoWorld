@@ -35,9 +35,9 @@ https://courses.calhoun.io/lessons/les_goph_36
 
 Learning Path TODO : 
 
-Worker Pools 
+    Worker Pools 
 
-WaitGroups
+    WaitGroups
 
 
 
