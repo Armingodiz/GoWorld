@@ -6,7 +6,7 @@ A playground for trainings and some mini projects !
 * [Some usefull ds implementions ](https://github.com/Armingodiz/go-stuff/tree/master/Data-Structures)
 
 Projects : 
-* [url-shortener)](https://github.com/Armingodiz/URL-Shortener#url-shortener)
+* [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
 * [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
 * [Api saver Cli](https://github.com/Armingodiz/go-stuff/tree/master/apisaver)
 * [twitter-bot](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/go-twitter-bot)
