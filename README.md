@@ -1,9 +1,10 @@
-# go-stuff
+# Go World 
 
 
-A playground for trainings and some mini projects ! 
+A playground for trainings and some mini projects
+also a place to share good resources and ofcourse , links to all my golang projects !
 
-* [Some usefull ds implementions ](https://github.com/Armingodiz/go-stuff/tree/master/Data-Structures)
+* [Some usefull ds implementions in golang](https://github.com/Armingodiz/go-stuff/tree/master/Data-Structures)
 
 Projects : 
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
@@ -15,22 +16,15 @@ Projects :
 * [decide game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20WebApp%20to%20practice%20using%20json)
 * [telegram-Bot](https://github.com/Armingodiz/go-stuff/edit/master/miniProjects/Telegram-Bot)
 
-Usefull Links : 
 
-For working with json files:
-
-https://mholt.github.io/json-to-go/   
-
-For DOCKER : 
-
-https://www.docker.com/blog/docker-golang/ 
-
-
-https://tutorialedge.net/golang/go-docker-tutorial/
-
-For Using github.com/spf13/cobra : 
-
-https://courses.calhoun.io/lessons/les_goph_36
+## Usefull Links
+good for      | website
+------------- | -------------
+  make suitable struct to unmarshal json | https://mholt.github.io/json-to-go/ 
+  DOCKER                                 | https://www.docker.com/blog/docker-golang/ 
+  Go DOCKER                              | https://tutorialedge.net/golang/go-docker-tutorial/
+  Go cli                                 | https://courses.calhoun.io/lessons/les_goph_36
+  
 
 
 Learning Path TODO : 
