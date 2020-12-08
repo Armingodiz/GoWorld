@@ -29,9 +29,19 @@ good for      | website
 
 Learning Path TODO : 
 
+    Receiver methods
+    
+    Design Patterns
+    
     Worker Pools 
 
     WaitGroups
+    
+    MongoDB
+    
+    Race condition
+    
+    PostgreSQL
 
 
 
