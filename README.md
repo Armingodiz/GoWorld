@@ -27,23 +27,22 @@ good for      | website
   
 
 
-Learning Path TODO : 
+Learning Path TODO :
 
-    Receiver methods
+   - [ ] Design Patterns
+   
+   - [ ]     MongoDB
+   
+   - [ ]  Receiver methods
+   
+   - [ ] Worker Pools 
+   
+   - [ ] WaitGroups
+   
+   - [ ] Race condition
+   
+   - [ ] PostgreSQL
     
-    Design Patterns
-    
-    Worker Pools 
-
-    WaitGroups
-    
-    MongoDB
-    
-    Race condition
-    
-    PostgreSQL
-
-
 
 ![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
 
