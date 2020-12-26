@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0173a6a-691a-4185-bb5f-14eb825d281d" name="Default Changelist" comment="" />
+    <list default="true" id="e0173a6a-691a-4185-bb5f-14eb825d281d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apisaver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apisaver/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +21,12 @@
     </option>
   </component>
   <component name="GOROOT" path="/snap/go/current" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
   <component name="ProjectId" id="1fsNb3ljsFlGnI5uHxOwvy6fxHS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,7 +40,8 @@
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../golang-web-dev-master/012_hands-on/01_hands-on/starting-code" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,42 +79,13 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="791" y="215" width="400" height="684" key="#GOPATH" timestamp="1597004560243">
+    <state x="654" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1606324580607">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="791" y="215" width="400" height="684" key="#GOPATH/72.27.1848.1053@72.27.1848.1053" timestamp="1597004560243" />
-    <state x="791" y="486" width="410" height="141" key="#GOROOT" timestamp="1597004267298">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="791" y="486" width="410" height="141" key="#GOROOT/72.27.1848.1053@72.27.1848.1053" timestamp="1597004267298" />
-    <state x="779" y="315" width="431" height="491" key="FileChooserDialogImpl" timestamp="1597152966309">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="779" y="315" width="431" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1597152966309" />
-    <state width="1800" height="265" key="GridCell.Tab.0.bottom" timestamp="1597006099362">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1800" height="265" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1597006099362" />
-    <state width="1800" height="265" key="GridCell.Tab.0.center" timestamp="1597006099362">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1800" height="265" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1597006099362" />
-    <state width="1800" height="265" key="GridCell.Tab.0.left" timestamp="1597006099362">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1800" height="265" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1597006099361" />
-    <state width="1800" height="265" key="GridCell.Tab.0.right" timestamp="1597006099362">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1800" height="265" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1597006099362" />
-    <state x="538" y="163" width="1022" height="737" key="SettingsEditor" timestamp="1597004677925">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="538" y="163" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1597004677925" />
-    <state x="659" y="272" width="672" height="678" key="search.everywhere.popup" timestamp="1597004665658">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="659" y="272" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1597004665658" />
+    <state x="654" y="193" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1606324580607" />
   </component>
 </project>

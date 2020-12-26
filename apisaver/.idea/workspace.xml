@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d8fd866f-3380-4069-a098-0eb65ee82db0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -16,7 +19,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/snap/go/6633" />
+  <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -86,6 +89,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="786" y="350" width="410" height="149" key="#GOROOT" timestamp="1606134591312">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="786" y="350" width="410" height="149" key="#GOROOT/72.27.1848.1053@72.27.1848.1053" timestamp="1606134591312" />
     <state x="454" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604003695905">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -110,5 +117,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1800" height="171" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1604003729668" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1606142661660">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1606142661660" />
   </component>
 </project>
