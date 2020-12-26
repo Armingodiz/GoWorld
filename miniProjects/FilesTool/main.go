@@ -32,13 +32,14 @@ func (t *Tool) Performe(chosen []os.FileInfo) error {
 
 func main() {
 	tool := NewTool(nil)
-	chosen := tool.Find("./sample", "2020")
+	chosen := tool.Find("./sample", "test")
 	// Transfer Performance :
 	//tool.SetPerformer(NewTransfer("/home/armin/go/src/github.com/Armingodiz/go-stuff/miniProjects/FilesTool/sample/","/home/armin/go/src/github.com/Armingodiz/go-stuff/miniProjects/FilesTool/"))
-  // Rename Performance :
+	// Rename Performance :
 	//tool.SetPerformer(NewRename("/home/armin/go/src/github.com/Armingodiz/go-stuff/miniProjects/FilesTool/sample/", false, "test"))
-  // Categorise Performance :
-	tool.Performe(chosen)
+	// Categorise Performance :
+	//tool.SetPerformer(NewCategorise("/home/armin/go/src/github.com/Armingodiz/go-stuff/miniProjects/FilesTool/sample/"))
+	//tool.Performe(chosen)
 }
 
 func (t *Tool) Find(dir, pattern string) []os.FileInfo {
