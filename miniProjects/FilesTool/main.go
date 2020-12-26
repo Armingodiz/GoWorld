@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-  "strings"
+	"strings"
 )
 
 type Performer interface {
@@ -33,27 +33,25 @@ func (t *Tool) Performe(chosen []os.FileInfo) error {
 func main() {
 	tool := NewTool(nil)
 	chosen := tool.Find("./sample", "test")
-  fmt.Println(chosen[0].Name())
-	tool.SetPerformer(NewCategorise(true))
-	tool.Performe(nil)
-	tool.SetPerformer(NewRename("", true, ""))
-	tool.Performe(nil)
-	tool.SetPerformer(NewTransfer(""))
-	tool.Performe(nil)
+  // Transfer Performance :
+	//tool.SetPerformer(NewTransfer("/home/armin/go/src/github.com/Armingodiz/go-stuff/miniProjects/FilesTool/sample/","/home/armin/go/src/github.com/Armingodiz/go-stuff/miniProjects/FilesTool/"))
+	//tool.Performe(chosen)
 }
+
+
 
 func (t *Tool) Find(dir, pattern string) []os.FileInfo {
 	files, err := ioutil.ReadDir(dir)
-  chosen := []os.FileInfo{}
+	chosen := []os.FileInfo{}
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("###########found files in  dir  : ")
 	for _, file := range files {
-		fmt.Print(file.Name())
-    if strings.Contains(file.Name(),pattern){
-      chosen = append(chosen, file)
-    }
+		fmt.Println(file.Name())
+		if strings.Contains(file.Name(), pattern) {
+			chosen = append(chosen, file)
+		}
 	}
 	fmt.Println("######################################")
 	return chosen
