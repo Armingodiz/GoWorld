@@ -21,9 +21,9 @@ func (t Transfer) Task(chosen []os.FileInfo) error {
 		Original_Path := t.Source + file.Name()
 		New_Path := t.Destination + file.Name()
 		e := os.Rename(Original_Path, New_Path)
-    if e != nil{
-      return e
-    }
+		if e != nil {
+			return e
+		}
 	}
 	return nil
 }
