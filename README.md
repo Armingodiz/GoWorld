@@ -8,13 +8,15 @@ also a place to share good resources and ofcourse , links to all my golang proje
 
 Projects : 
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
+* [telegram-Bot](https://github.com/Armingodiz/go-stuff/edit/master/miniProjects/Telegram-Bot)
 * [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
 * [Api saver Cli](https://github.com/Armingodiz/go-stuff/tree/master/apisaver)
+* [FilesTools](https://github.com/Armingodiz/GoWorld/tree/master/miniProjects/FilesTool)
 * [twitter-bot](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/go-twitter-bot)
 * [quiz-game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/quiz-game-Go)
 * [login-system](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20login-system)
 * [decide game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20WebApp%20to%20practice%20using%20json)
-* [telegram-Bot](https://github.com/Armingodiz/go-stuff/edit/master/miniProjects/Telegram-Bot)
+
 
 
 ## Usefull Links
@@ -29,7 +31,7 @@ good for      | website
 
 Learning Path TODO :
 
-   - [ ] Design Patterns
+   - [ ] Design Patterns ( Pipelines and cancellation after getting deeper in concurrency )
    
    - [ ]     MongoDB
    
