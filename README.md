@@ -1,12 +1,11 @@
 # Go World 
 
 
-A playground for trainings and some mini projects
-also a place to share good resources and ofcourse , links to all my golang projects !
+A place for trainings and some mini projects
+also to share good resources and ofcourse , links to all my golang projects !
 
-* [Some usefull ds implementions in golang](https://github.com/Armingodiz/go-stuff/tree/master/Data-Structures)
 
-Projects : 
+## Projects 
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
 * [telegram-Bot](https://github.com/Armingodiz/go-stuff/edit/master/miniProjects/Telegram-Bot)
 * [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
@@ -17,6 +16,24 @@ Projects :
 * [login-system](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20login-system)
 * [decide game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20WebApp%20to%20practice%20using%20json)
 
+## Practiced Databases 
+* [redis](https://github.com/Armingodiz/URL-Shortener#url-shortener)
+* [mysql](https://github.com/Armingodiz/GoWorld/tree/master/miniProjects/simple%20login-system)
+- [ ]     MongoDB
+- [ ] PostgreSQL
+
+
+## Practiced design patterns
+*  [Strategy](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Strategy)
+*  [Fuctional Options](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Functional%20Options)
+*  [Builder](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Builder)
+- [ ] Pipelines ( after getting deeper in concurrency )
+- [ ] cancellation ( after getting deeper in concurrency )
+
+
+
+## Data Structures 
+* [Some usefull ds implementions in golang](https://github.com/Armingodiz/go-stuff/tree/master/Data-Structures)
 
 
 ## Usefull Links
@@ -29,11 +46,7 @@ good for      | website
   
 
 
-Learning Path TODO :
-
-   - [ ] Design Patterns ( Pipelines and cancellation after getting deeper in concurrency )
-   
-   - [ ]     MongoDB
+## Learning Path TODO :
    
    - [ ]  Receiver methods
    
@@ -43,7 +56,7 @@ Learning Path TODO :
    
    - [ ] Race condition
    
-   - [ ] PostgreSQL
+
     
 
 ![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
