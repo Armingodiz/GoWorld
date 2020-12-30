@@ -31,7 +31,7 @@ good for      | website
 
 Learning Path TODO :
 
-   - [ ] Design Patterns
+   - [ ] Design Patterns ( Pipelines and cancellation after getting deeper in concurrency )
    
    - [ ]     MongoDB
    
