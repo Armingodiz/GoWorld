@@ -1,4 +1,4 @@
-\#Strategy
+# Strategy 
 
 creating a family of the algorithm with each algorithm having its own class. Each of these classes follows the same interface, and this makes the algorithm interchangeable within the family.
 
