@@ -7,6 +7,7 @@ also to share good resources and ofcourse , links to all my golang projects !
 
 ## Projects 
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
+* [Chat server](https://github.com/Armingodiz/Chat-sever)
 * [telegram-Bot](https://github.com/Armingodiz/go-stuff/edit/master/miniProjects/Telegram-Bot)
 * [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
 * [Api saver Cli](https://github.com/Armingodiz/go-stuff/tree/master/apisaver)
