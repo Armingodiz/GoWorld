@@ -1,9 +1,9 @@
 # Go World 
 
-
 A place for trainings and some mini projects
 also to share good resources and ofcourse , links to all my golang projects !
 
+![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
 
 ## Projects 
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
@@ -66,7 +66,6 @@ good for      | website
 
     
 
-![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
 
 
 
