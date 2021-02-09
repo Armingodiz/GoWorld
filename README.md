@@ -33,8 +33,14 @@ also to share good resources and ofcourse , links to all my golang projects !
 
 
 
-## Data Structures 
-* [Some usefull ds implementions in golang](https://github.com/Armingodiz/go-stuff/tree/master/Data-Structures)
+## Data Structure implementation 
+* [Binary Search Tree](https://github.com/Armingodiz/GoWorld/tree/master/Data-Structures/Binary%20search%20tree)
+* [Graph](https://github.com/Armingodiz/GoWorld/tree/master/Data-Structures/Graph)
+* [Hash Table](https://github.com/Armingodiz/GoWorld/tree/master/Data-Structures/HashTable)
+* [Heap](https://github.com/Armingodiz/GoWorld/tree/master/Data-Structures/Heap%26HeapSort)
+* [Red black Tree](https://github.com/Armingodiz/GoWorld/tree/master/Data-Structures/RedBlackTree)
+* [Link list](https://github.com/Armingodiz/GoWorld/tree/master/Data-Structures/link-list)
+* [Stack](https://github.com/Armingodiz/GoWorld/tree/master/Data-Structures/stack)
 
 
 ## Usefull Links
