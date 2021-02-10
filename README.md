@@ -20,8 +20,8 @@ also to share good resources and ofcourse , links to all my golang projects !
 ## Practiced Databases 
 * [redis](https://github.com/Armingodiz/URL-Shortener#url-shortener)
 * [mysql](https://github.com/Armingodiz/GoWorld/tree/master/miniProjects/simple%20login-system)
+* [ PostgreSQL](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/Postgres)
 - [ ]     MongoDB
-- [ ] PostgreSQL
 
 
 ## Practiced design patterns
@@ -53,15 +53,13 @@ good for      | website
   
 
 
-## Learning Path TODO :
+## Concurrency Topics :
    
-   - [x]  Receiver methods
-   
-   - [x] Worker Pools 
-   
-   - [x] WaitGroups
-   
-   - [x] Race condition
+   *  [Worker Pools ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/WorkerPools)
+    
+   *  [WaitGroups ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/waitGroups)
+    
+   *  [Race condition ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/RaceCondition)
    
 
     
