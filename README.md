@@ -55,13 +55,13 @@ good for      | website
 
 ## Learning Path TODO :
    
-   - [ ]  Receiver methods
+   - [x]  Receiver methods
    
-   - [ ] Worker Pools 
+   - [x] Worker Pools 
    
-   - [ ] WaitGroups
+   - [x] WaitGroups
    
-   - [ ] Race condition
+   - [x] Race condition
    
 
     
