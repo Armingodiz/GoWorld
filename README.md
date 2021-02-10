@@ -1,21 +1,21 @@
 # Go World 
 
-
 A place for trainings and some mini projects
 also to share good resources and ofcourse , links to all my golang projects !
 
+![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
 
 ## Projects 
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
 * [Chat server](https://github.com/Armingodiz/Chat-sever)
-* [telegram-Bot](https://github.com/Armingodiz/go-stuff/edit/master/miniProjects/Telegram-Bot)
-* [black-jack game (with simple ai )](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/BlackJackGame)
-* [Api saver Cli](https://github.com/Armingodiz/go-stuff/tree/master/apisaver)
-* [FilesTools](https://github.com/Armingodiz/GoWorld/tree/master/miniProjects/FilesTool)
-* [twitter-bot](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/go-twitter-bot)
-* [quiz-game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/quiz-game-Go)
-* [login-system](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20login-system)
-* [decide game](https://github.com/Armingodiz/go-stuff/tree/master/miniProjects/simple%20WebApp%20to%20practice%20using%20json)
+* [telegram-Bot](https://github.com/Armingodiz/GoWorld/tree/master/Projects/Telegram-Bot)
+* [black-jack game (with simple ai )](https://github.com/Armingodiz/GoWorld/tree/master/Projects/BlackJackGame)
+* [Api saver Cli](https://github.com/Armingodiz/GoWorld/tree/master/Projects/apisaver)
+* [FilesTools](https://github.com/Armingodiz/GoWorld/tree/master/Projects/FilesTool)
+* [twitter-bot](https://github.com/Armingodiz/GoWorld/tree/master/Projects/go-twitter-bot)
+* [quiz-game](https://github.com/Armingodiz/GoWorld/tree/master/Projects/quiz-game-Go)
+* [login-system](https://github.com/Armingodiz/GoWorld/tree/master/Projects/simple%20login-system)
+* [decide game](https://github.com/Armingodiz/GoWorld/tree/master/Projects/simple%20WebApp%20to%20practice%20using%20json)
 
 ## Practiced Databases 
 * [redis](https://github.com/Armingodiz/URL-Shortener#url-shortener)
@@ -66,7 +66,6 @@ good for      | website
 
     
 
-![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
 
 
 
