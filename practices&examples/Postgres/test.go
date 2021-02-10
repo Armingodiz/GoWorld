@@ -28,13 +28,11 @@ func main() {
 		os.Exit(1)
 	}
 	// selecting row with condition :
-	rows, err := conn.Query(context.Background(), "SELECT price  FROM product\nWHERE name='armin';")
-	// todo: problem with getting selected data .
-	c := 0
-	rows.Scan(&c)
+	var num int
+	err = conn.QueryRow(context.Background(), "SELECT price  FROM product\nWHERE name='armin';").Scan(&num)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "selest failed: %v\n", err)
 		os.Exit(1)
 	}
-	fmt.Println(c)
+	fmt.Println(num)
 }
