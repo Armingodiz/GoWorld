@@ -6,6 +6,7 @@ also to share good resources and ofcourse , links to all my golang projects !
 ![pic](https://files.virgool.io/upload/users/14114/posts/lqwhva3jm3qh/zvpmsrcjkgug.png)
 
 ## Projects 
+* [Gook](https://github.com/Armingodiz/Gook)
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
 * [Chat server](https://github.com/Armingodiz/Chat-sever)
 * [telegram-Bot](https://github.com/Armingodiz/GoWorld/tree/master/Projects/Telegram-Bot)
@@ -20,8 +21,8 @@ also to share good resources and ofcourse , links to all my golang projects !
 ## Practiced Databases 
 * [redis](https://github.com/Armingodiz/URL-Shortener#url-shortener)
 * [mysql](https://github.com/Armingodiz/GoWorld/tree/master/miniProjects/simple%20login-system)
+* [ PostgreSQL](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/Postgres)
 - [ ]     MongoDB
-- [ ] PostgreSQL
 
 
 ## Practiced design patterns
@@ -53,15 +54,13 @@ good for      | website
   
 
 
-## Learning Path TODO :
+## Concurrency Topics :
    
-   - [ ]  Receiver methods
-   
-   - [ ] Worker Pools 
-   
-   - [ ] WaitGroups
-   
-   - [ ] Race condition
+   *  [Worker Pools ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/WorkerPools)
+    
+   *  [WaitGroups ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/waitGroups)
+    
+   *  [Race condition ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/RaceCondition)
    
 
     
