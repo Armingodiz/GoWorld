@@ -102,21 +102,18 @@ func GetAllUsers() ([]User, error) {
 	return users, nil
 }
 
-/*
-
-
 //GetIssuesByCode - Get All issues for collection
-func GetIssuesByCode(code string) (Issue, error) {
-	result := Issue{}
+func GetUserByName(name string) (User, error) {
+	result := User{}
 	//Define filter query for fetching specific document from collection
-	filter := bson.D{primitive.E{Key: "code", Value: code}}
+	filter := bson.D{primitive.E{Key: "naem", Value: name}}
 	//Get MongoDB connection using connectionhelper.
-	client, err := connectionhelper.GetMongoClient()
+	client, err := GetMongoClient()
 	if err != nil {
 		return result, err
 	}
 	//Create a handle to the respective collection in the database.
-	collection := client.Database(connectionhelper.DB).Collection(connectionhelper.ISSUES)
+	collection := client.Database(DB).Collection(Users)
 	//Perform FindOne operation & validate against the error.
 	err = collection.FindOne(context.TODO(), filter).Decode(&result)
 	if err != nil {
@@ -126,39 +123,7 @@ func GetIssuesByCode(code string) (Issue, error) {
 	return result, nil
 }
 
-//GetAllIssues - Get All issues for collection
-func GetAllIssues() ([]Issue, error) {
-	//Define filter query for fetching specific document from collection
-	filter := bson.D{{}} //bson.D{{}} specifies 'all documents'
-	var issues []Issue
-	//Get MongoDB connection using connectionhelper.
-	client, err := connectionhelper.GetMongoClient()
-	if err != nil {
-		return issues, err
-	}
-	//Create a handle to the respective collection in the database.
-	collection := client.Database(connectionhelper.DB).Collection(connectionhelper.ISSUES)
-	//Perform Find operation & validate against the error.
-	cur, findError := collection.Find(context.TODO(), filter)
-	if findError != nil {
-		return issues, findError
-	}
-	//Map result to slice
-	for cur.Next(context.TODO()) {
-		var t Issue
-		err := cur.Decode(&t)
-		if err != nil {
-			return issues, err
-		}
-		issues = append(issues, t)
-	}
-	// once exhausted, close the cursor
-	cur.Close(context.TODO())
-	if len(issues) == 0 {
-		return issues, mongo.ErrNoDocuments
-	}
-	return issues, nil
-}
+/*
 
 //DeleteOne - Get All issues for collection
 func DeleteOne(code string) error {
@@ -223,12 +188,15 @@ func main() {
 	}
 	users := []User{user1, user2}
 	//CreateUser(user)
+	//CreateMany(users)
 	// DeleteOne("I0001")
 	//DeleteAll()
-	CreateMany(users)
 	users, err := GetAllUsers()
 	if err != nil {
 		fmt.Print(err)
 	}
 	PrintList(users)
+	us, err2 := GetUserByName("armin")
+	fmt.Println(err2)
+	fmt.Println(us.Email)
 }
