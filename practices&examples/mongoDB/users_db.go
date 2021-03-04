@@ -123,7 +123,6 @@ func GetUserByName(name string) (User, error) {
 	return result, nil
 }
 
-//DeleteOne - Get All issues for collection
 func DeleteByName(name string) error {
 	//Define filter query for fetching specific document from collection
 	filter := bson.D{primitive.E{Key: "naem", Value: name}}
@@ -143,38 +142,30 @@ func DeleteByName(name string) error {
 	return nil
 }
 
-/*
-
-
-//DeleteAll - Get All issues for collection
 func DeleteAll() error {
 	//Define filter query for fetching specific document from collection
 	selector := bson.D{{}} // bson.D{{}} specifies 'all documents'
 	//Get MongoDB connection using connectionhelper.
-	client, err := connectionhelper.GetMongoClient()
+	client, err := GetMongoClient()
 	if err != nil {
 		return err
 	}
 	//Create a handle to the respective collection in the database.
-	collection := client.Database(connectionhelper.DB).Collection(connectionhelper.ISSUES)
+	collection := client.Database(DB).Collection(Users)
 	//Perform DeleteMany operation & validate against the error.
 	_, err = collection.DeleteMany(context.TODO(), selector)
 	if err != nil {
 		return err
 	}
-	//Return success without any error.
 	return nil
 }
 
-
-
-*/
 func main() {
 	//CreateUser(user)
 	//CreateMany(users)
 	//us, err2 := GetUserByName("armin")
 	//DeleteByName("armin")
-	//DeleteAll()
+	DeleteAll()
 	users, err := GetAllUsers()
 	if err != nil {
 		fmt.Print(err)
