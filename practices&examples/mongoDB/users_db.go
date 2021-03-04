@@ -123,28 +123,28 @@ func GetUserByName(name string) (User, error) {
 	return result, nil
 }
 
-/*
-
 //DeleteOne - Get All issues for collection
-func DeleteOne(code string) error {
+func DeleteByName(name string) error {
 	//Define filter query for fetching specific document from collection
-	filter := bson.D{primitive.E{Key: "code", Value: code}}
+	filter := bson.D{primitive.E{Key: "naem", Value: name}}
 	//Get MongoDB connection using connectionhelper.
-	client, err := connectionhelper.GetMongoClient()
+	client, err := GetMongoClient()
 	if err != nil {
 		return err
 	}
 	//Create a handle to the respective collection in the database.
-	collection := client.Database(connectionhelper.DB).Collection(connectionhelper.ISSUES)
+	collection := client.Database(DB).Collection(Users)
 
 	//Perform DeleteOne operation & validate against the error.
 	_, err = collection.DeleteOne(context.TODO(), filter)
 	if err != nil {
 		return err
 	}
-	//Return success without any error.
 	return nil
 }
+
+/*
+
 
 //DeleteAll - Get All issues for collection
 func DeleteAll() error {
@@ -170,33 +170,15 @@ func DeleteAll() error {
 
 */
 func main() {
-	user1 := User{
-		ID:        primitive.NewObjectID(),
-		CreatedAt: time.Now(),
-		UpdatedAt: time.Now(),
-		Name:      "armin3",
-		Email:     "armin@gmail.com",
-		Password:  "3011",
-	}
-	user2 := User{
-		ID:        primitive.NewObjectID(),
-		CreatedAt: time.Now(),
-		UpdatedAt: time.Now(),
-		Name:      "armin2",
-		Email:     "armin@gmail.com",
-		Password:  "3011",
-	}
-	users := []User{user1, user2}
 	//CreateUser(user)
 	//CreateMany(users)
-	// DeleteOne("I0001")
+	//us, err2 := GetUserByName("armin")
+	//DeleteByName("armin")
 	//DeleteAll()
 	users, err := GetAllUsers()
 	if err != nil {
 		fmt.Print(err)
 	}
 	PrintList(users)
-	us, err2 := GetUserByName("armin")
-	fmt.Println(err2)
-	fmt.Println(us.Email)
+
 }
