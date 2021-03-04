@@ -48,7 +48,7 @@ func PrintList(issues []User) {
 //GetAllIssues - Get All issues for collection
 func GetAllUsers() ([]User, error) {
 	//Define filter query for fetching specific document from collection
-	filter := bson.D{{}} //bson.D{{}} specifies 'all documents'
+	filter := bson.D{{}} //     ***************  bson.D{{}} specifies 'all documents'   ****************
 	var users []User
 	//Get MongoDB connection using connectionhelper.
 	client, err := GetMongoClient()
