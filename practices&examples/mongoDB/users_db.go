@@ -38,6 +38,29 @@ func CreateUser(user User) error {
 	return nil
 }
 
+//CreateMany - Insert multiple documents at once in the collection.
+func CreateMany(list []User) error {
+	//Map struct slice to interface slice as InsertMany accepts interface slice as parameter
+	insertableList := make([]interface{}, len(list))
+	for i, v := range list {
+		insertableList[i] = v
+	}
+	client, err := GetMongoClient()
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	//Create a handle to the respective collection in the database.
+	collection := client.Database(DB).Collection(Users)
+	//Perform InsertMany operation & validate against the error.
+	_, err = collection.InsertMany(context.TODO(), insertableList)
+	if err != nil {
+		fmt.Println(err)
+		return err
+	}
+	return nil
+}
+
 //PrintList - Print list of users on console
 func PrintList(issues []User) {
 	for i, u := range issues {
@@ -80,28 +103,7 @@ func GetAllUsers() ([]User, error) {
 }
 
 /*
-//CreateMany - Insert multiple documents at once in the collection.
-func CreateMany(list []Issue) error {
-	//Map struct slice to interface slice as InsertMany accepts interface slice as parameter
-	insertableList := make([]interface{}, len(list))
-	for i, v := range list {
-		insertableList[i] = v
-	}
-	//Get MongoDB connection using connectionhelper.
-	client, err := connectionhelper.GetMongoClient()
-	if err != nil {
-		return err
-	}
-	//Create a handle to the respective collection in the database.
-	collection := client.Database(connectionhelper.DB).Collection(connectionhelper.ISSUES)
-	//Perform InsertMany operation & validate against the error.
-	_, err = collection.InsertMany(context.TODO(), insertableList)
-	if err != nil {
-		return err
-	}
-	//Return success without any error.
-	return nil
-}
+
 
 //GetIssuesByCode - Get All issues for collection
 func GetIssuesByCode(code string) (Issue, error) {
@@ -203,20 +205,30 @@ func DeleteAll() error {
 
 */
 func main() {
-	/*user := User{
+	user1 := User{
 		ID:        primitive.NewObjectID(),
 		CreatedAt: time.Now(),
 		UpdatedAt: time.Now(),
-		Name:      "armin",
+		Name:      "armin3",
 		Email:     "armin@gmail.com",
 		Password:  "3011",
-	}*/
+	}
+	user2 := User{
+		ID:        primitive.NewObjectID(),
+		CreatedAt: time.Now(),
+		UpdatedAt: time.Now(),
+		Name:      "armin2",
+		Email:     "armin@gmail.com",
+		Password:  "3011",
+	}
+	users := []User{user1, user2}
 	//CreateUser(user)
 	// DeleteOne("I0001")
 	//DeleteAll()
+	CreateMany(users)
 	users, err := GetAllUsers()
 	if err != nil {
-		fmt.print(err)
+		fmt.Print(err)
 	}
 	PrintList(users)
 }
