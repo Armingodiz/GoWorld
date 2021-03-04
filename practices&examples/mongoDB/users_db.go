@@ -160,16 +160,41 @@ func DeleteAll() error {
 	return nil
 }
 
+func UpdateByName(name string) error {
+	//Define filter query for fetching specific document from collection
+	filter := bson.D{primitive.E{Key: "naem", Value: name}}
+
+	//Define updater for to specifiy change to be updated.
+	updater := bson.D{primitive.E{Key: "$set", Value: bson.D{
+		primitive.E{Key: "updated_at", Value: time.Now()},
+	}}}
+
+	//Get MongoDB connection using connectionhelper.
+	client, err := GetMongoClient()
+	if err != nil {
+		return err
+	}
+	collection := client.Database(DB).Collection(Users)
+	//Perform UpdateOne operation & validate against the error.
+	_, err = collection.UpdateOne(context.TODO(), filter, updater)
+	if err != nil {
+		return err
+	}
+	//Return success without any error.
+	return nil
+}
+
 func main() {
-	//CreateUser(user)
+	/*user := User{
+		Name:      "armin",
+		CreatedAt: time.Now(),
+		UpdatedAt: time.Now(),
+		Email:     "armin3011",
+	}
+	CreateUser(user)*/
 	//CreateMany(users)
 	//us, err2 := GetUserByName("armin")
 	//DeleteByName("armin")
-	DeleteAll()
-	users, err := GetAllUsers()
-	if err != nil {
-		fmt.Print(err)
-	}
-	PrintList(users)
-
+	//DeleteAll()
+	UpdateByName("armin")
 }
