@@ -17,6 +17,11 @@ import (
 	"time"
 )
 
+func main() {
+	urls := []string{"http://httpbin.org/headers", "http://httpbin.org/user-agent"}
+	barrier(urls[0], urls[1])
+}
+
 // captureBarrierOutput will capture the outputs in stdout and can be used in writing unit test
 func captureBarrierOutput(endpoints ...string) string {
 	// Create a pipe that allows us to connect
@@ -109,7 +114,7 @@ func makeRequest(out chan<- barrierResp, url string) {
 		return
 	}
 
-	// Send it throught the channel
+	// Send it through the channel
 	res.Resp = string(byt)
 	out <- res
 }
