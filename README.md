@@ -29,7 +29,7 @@ also to share good resources and ofcourse , links to all my golang projects !
 *  [Strategy](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Strategy)
 *  [Fuctional Options](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Functional%20Options)
 *  [Builder](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Builder)
-- [ ] Pipelines ( after getting deeper in concurrency )
+*  [Pipelines](https://github.com/Armingodiz/GoWorld/blob/master/practices&examples/disign%20patterns/concurrencyDP/pipeline)
 - [ ] cancellation ( after getting deeper in concurrency )
 
 
@@ -61,6 +61,10 @@ good for      | website
    *  [WaitGroups ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/waitGroups)
     
    *  [Race condition ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/RaceCondition)
+
+   *  [design patterns ](https://github.com/Armingodiz/GoWorld/blob/master/practices&examples/disign%20patterns/concurrencyDP)
+
+
    
 
     
