@@ -30,8 +30,6 @@ also to share good resources and ofcourse , links to all my golang projects !
 *  [Fuctional Options](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Functional%20Options)
 *  [Builder](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/Builder)
 *  [Pipelines](https://github.com/Armingodiz/GoWorld/blob/master/practices&examples/disign%20patterns/concurrencyDP/pipeline)
-- [ ] cancellation ( after getting deeper in concurrency )
-
 
 
 ## Data Structure implementation 
