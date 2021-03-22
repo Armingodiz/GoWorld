@@ -52,7 +52,7 @@ also to share good resources and ofcourse , links to all my golang projects !
    *  [WaitGroups ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/waitGroups)
     
    *  [Race condition ](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/concurrency/RaceCondition)
-   *  
+
    *  [design patterns](https://github.com/Armingodiz/GoWorld/tree/master/practices%26examples/disign%20patterns/concurrencyDP)
    
 
