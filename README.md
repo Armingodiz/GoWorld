@@ -7,6 +7,7 @@ also to share good resources and ofcourse , links to all my golang projects !
 
 ## Projects 
 * [Gook](https://github.com/Armingodiz/Gook)
+* [Concurrency-challenge](https://github.com/Armingodiz/golang-code-challenge)
 * [Gochain](https://github.com/Armingodiz/Gochain)
 * [url-shortener](https://github.com/Armingodiz/URL-Shortener#url-shortener)
 * [Chat server](https://github.com/Armingodiz/Chat-sever)
