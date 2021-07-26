@@ -13,7 +13,7 @@ also to share good resources and ofcourse , links to all my golang projects !
 * [Gochain](https://github.com/Armingodiz/Gochain)
 * [Chat server](https://github.com/Armingodiz/Chat-sever)
 * [telegram-Bot](https://github.com/Armingodiz/GoWorld/tree/master/Projects/Telegram-Bot)
-* [black-jack game (with simple ai )](https://github.com/Armingodiz/GoWorld/tree/master/Projects/BlackJackGame)
+* [black-jack game (with simple ai)](https://github.com/Armingodiz/GoWorld/tree/master/Projects/BlackJackGame)
 * [Api saver Cli](https://github.com/Armingodiz/GoWorld/tree/master/Projects/apisaver)
 * [FilesTools](https://github.com/Armingodiz/GoWorld/tree/master/Projects/FilesTool)
 * [twitter-bot](https://github.com/Armingodiz/GoWorld/tree/master/Projects/go-twitter-bot)
